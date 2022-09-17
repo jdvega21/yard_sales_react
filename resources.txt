@@ -1,0 +1,25 @@
+	
+Reactjs code snippets
+https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+
+//**rsc
+PRINTS:
+import React from 'react';
+
+const App = () => {
+    return (
+        <h1>Hola Mundo!</h1>
+    );
+};
+
+export default App;
+
+//** Install Babel
+npm install @babel/core @babel/preset-env @babel/preset-react -D
+
+//**Webpack
+npm install webpack@5 webpack-cli@4 webpack-dev-server@4 -D
+
+//***LOADERS
+npm install babel-loader html-loader html-webpack-plugin -default
+
