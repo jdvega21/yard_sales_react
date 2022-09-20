@@ -1,0 +1,14 @@
+.notfound-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.notfound-image img{
+    width: 80px;
+    filter: opacity(0.6) drop-shadow(0 0 0 var(--hospital-green));
+}

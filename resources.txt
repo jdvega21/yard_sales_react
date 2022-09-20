@@ -2,6 +2,15 @@
 Reactjs code snippets
 https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
 
+HTML to React jsx
+ext install riazxrazor.html-to-jsx
+
+Autofilling for React 7
+ext install dsznajder.es7-react-js-snippets
+
+//Router for separating view/pages logic
+npm install react-router-dom@6
+
 //**rsc
 PRINTS:
 import React from 'react';
@@ -23,3 +32,5 @@ npm install webpack@5 webpack-cli@4 webpack-dev-server@4 -D
 //***LOADERS
 npm install babel-loader html-loader html-webpack-plugin -default
 
+//CSS ans SASS 
+npm i mini-css-extract-plugin css-loader style-loader sass sass-loader -D
