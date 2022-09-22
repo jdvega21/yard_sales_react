@@ -10,6 +10,7 @@ import MyAccount from '../pages/MyAccount';
 import CreateAccount from '../pages/CreateAccount';
 import Checkout from '../pages/Checkout';
 import Orders from '../pages/Orders';
+import Menu from '../components/Menu';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -23,10 +24,11 @@ const App = () => {
             <Route path="/password-recovery" element={<PasswordRecovery />} />
             <Route path="/send-email" element={<SendEmail />} />
             <Route path="/new-password" element={<NewPassword />} />
-            <Route path="/accout" element={<MyAccount />} />
+            <Route path="/account" element={<MyAccount />} />
             <Route path="/signup" element={<CreateAccount />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/menu" element={<Menu/>}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

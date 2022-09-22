@@ -52,6 +52,9 @@
 	font-weight: bold;
 	height: 50px;
 }
+.primary-button:hover{
+    background-color: var(--very-light-orange);
+  }
 @media (max-width: 640px) {
 	.MyOrder {
 		width: 100%;

@@ -1,14 +1,17 @@
 import React from 'react';
-import '../styles/NotFound.scss';
+import '@styles/NotFound.scss';
+import notfound from '@icons/404_error.svg';
+import yardSaleLogo from '@logos/logo_yard_sale.svg';
+
 const NotFound = () => {
     return (
-        <div className="login">
-            <div className="form-container" action="/">
-                <img className="logo" src="./logos/logo_yard_sale.svg" alt="logo"/>
+        <div className="NotFound">
+            <div className="NotFound-container" action="/">
+                <img className="logo" src={yardSaleLogo} alt="logo"/>
                 <h1 className="title">Page Not Found. Error 404!</h1>
                 <p className="subtitle">Please ensure you are looking at the correct resource</p>
-                <div className="notfound-image">
-                    <img src="./icons/404_error.svg" alt="error-404"/>
+                <div className="NotFound-image">
+                    <img src={notfound} alt="error-404"/>
                 </div>
                 <button className="primary-button">Back to Main Page</button>
             </div>

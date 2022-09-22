@@ -48,6 +48,9 @@ nav {
 .navbar-shopping-cart {
 	position: relative;
 }
+.navbar-shopping-cart:hover div{
+    background-color: var(--very-light-orange);
+}
 .navbar-shopping-cart div {
 	width: 16px;
 	height: 16px;

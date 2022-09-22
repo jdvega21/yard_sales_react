@@ -1,24 +1,25 @@
 import React from 'react';
-import OrderItem from '../components/OrderItem';
-import '../styles/Checkout.scss';
-
+import ShoppingCartItem from '@components/ShoppingCartItem';
+import '@styles/Checkout.scss';
+import  flecha from '@icons/flechita.svg';
 const Checkout = () => {
 	return (
-		<div className="Checkout">
+		<aside className="Checkout">
 			<div className="Checkout-container">
-				<h1 className="title">My order</h1>
-				<div className="Checkout-content">
-					<div className="order">
-						<p>
-							<span>03.25.21</span>
-							<span>6 articles</span>
-						</p>
-						<p>$560.00</p>
-					</div>
-				</div>
-				<OrderItem />
+				<img src={flecha} alt="arrow"/>
+					<p className="Checkout-title">Shopping Cart</p>
 			</div>
-		</div>
+			<div className="Checkout-content">
+			<ShoppingCartItem />
+			<div className="order">
+					<p>
+						<span>Total</span>
+					</p>
+					<p>$560.00</p>
+				</div>
+				<button className="primary-button">Checkout</button>
+			</div>
+		</aside>
 	);
 }
 

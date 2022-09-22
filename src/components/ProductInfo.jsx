@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/ProductInfo.scss';
+import '@styles/ProductInfo.scss';
+import addToCart from '@icons/bt_add_to_cart.svg';
 
 const ProductInfo = () => {
 	return (
@@ -17,7 +18,7 @@ const ProductInfo = () => {
 					a maximum support.
 				</p>
 				<button className="primary-button add-to-card-button">
-					<img src="./icons/bt_add_to_cart.svg" alt="add_to_cart" />
+					<img src={addToCart} alt="add_to_cart" />
 					Add to cart
 				</button>
 			</div>
