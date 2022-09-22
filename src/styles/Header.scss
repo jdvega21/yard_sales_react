@@ -21,6 +21,12 @@ nav {
 	align-items: center;
 	height: 60px;
 }
+.navbar-right ul li{
+	cursor: pointer;
+}
+.navbar-right ul li:nth-child(1):hover{
+	color: var(--hospital-green);
+}
 .navbar-left {
 	display: flex;
 }
