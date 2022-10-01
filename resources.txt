@@ -11,6 +11,12 @@ ext install dsznajder.es7-react-js-snippets
 //Router for separating view/pages logic
 npm install react-router-dom@6
 
+//Axios, assistance as fetch
+-npm i axios
+
+//Avoit to crash when API fetch does get elements
+npm install @babel/plugin-transform-runtime
+
 //**rsc
 PRINTS:
 import React from 'react';
