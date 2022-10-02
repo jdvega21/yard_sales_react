@@ -20,7 +20,7 @@ const App = () => {
 	const initialState = useInitialState();
 	return (
 		<AppContext.Provider value={initialState}>
-			<BrowserRouter>
+			<BrowserRouter basename='/yard_sales_react'>
 				<Layout>
 					<Routes>
 						<Route path="/" element={<Home />} />
