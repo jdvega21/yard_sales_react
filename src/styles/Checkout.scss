@@ -4,15 +4,20 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    background-color: var(--white);
   }
   .Checkout-container{
     display: flex;
-
   }
   .Checkout-container img{
     transform: rotate(180deg);
     margin-right: 14px;
-    
+    width: 12px;
+    height: 12px;
+    margin-top: 16px;
+    padding: 8px;
+    margin-bottom: 14px;
+    cursor: pointer;
   }
   .Checkout-title{
     font-size: var(--lg);

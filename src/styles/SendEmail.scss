@@ -53,6 +53,11 @@
 .resend a {
 	color: var(--hospital-green);
 	text-decoration: none;
+	padding: 10px;
+	font-weight: bold;
+}
+.resend a:hover {
+	color: var(--very-light-orange);
 }
 .primary-button {
 	background-color: var(--hospital-green);

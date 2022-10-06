@@ -17,6 +17,7 @@
 .Menu ul li{
     text-align: end;
 }
+
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2){
     text-align: end;
@@ -36,6 +37,10 @@
     display: inline-block;
     margin-bottom: 20px;
 }
+.Menu ul li a:hover{
+    color: var(--hospital-green);
+}
+
 .Menu ul li:last-child a:hover{
     color: var(--very-light-orange);
 } 

@@ -8,9 +8,12 @@ nav {
 }
 .menu {
 	display: none;
+	cursor: pointer;
 }
 .nav-logo {
 	width: 100px;
+	margin-top: 18px;
+	cursor: pointer;
 }
 .navbar-left ul,
 .navbar-right ul {
@@ -50,10 +53,17 @@ nav {
 	color: var(--very-light-pink);
 	font-size: var(--sm);
 	margin-right: 12px;
+	padding: 8px;
 }
 .navbar-shopping-cart {
 	position: relative;
 }
+.navbar-shopping-cart img {
+}
+.navbar-shopping-cart:hover img {
+	filter: invert(95%) sepia(3%) saturate(3110%) hue-rotate(65deg) brightness(90%) contrast(87%);
+}
+
 .navbar-shopping-cart:hover div{
     background-color: var(--very-light-orange);
 }
