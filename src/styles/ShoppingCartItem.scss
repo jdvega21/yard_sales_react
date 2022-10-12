@@ -18,6 +18,13 @@
     border-radius: 20px;
     object-fit: cover;
 }
+.ShoppingCartItem img:nth-child(4){
+    padding: 8px;
+}
+.ShoppingCartItem img:nth-child(4):hover {
+    cursor: pointer;
+    filter: var(--hover-red-filter)
+}
 
 .ShoppingCartItem p:nth-child(2) {
     color: var(--very-light-pink);

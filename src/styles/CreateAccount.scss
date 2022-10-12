@@ -44,6 +44,9 @@
 	padding: 6px;
 	margin-bottom: 12px;
 }
+.input:hover {
+	background-color: var(--very-light-pink);
+}
 .input-name,
 .input-email,
 .input-password {

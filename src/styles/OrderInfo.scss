@@ -25,3 +25,10 @@
 	font-size: var(--sm);
 	color: var(--very-light-pink);
 }
+.OrderInfo img {
+	padding: 8px;
+}
+.OrderInfo img:hover {
+    cursor: pointer;
+    filter: var(--hover-red-filter)
+}

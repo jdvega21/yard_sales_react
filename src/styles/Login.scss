@@ -26,7 +26,11 @@
 	font-size: var(--sm);
 	text-align: center;
 	text-decoration: none;
-	margin-bottom: 52px;
+	margin-bottom: 48px;
+	padding: 10px;
+}
+.form a:hover {
+	color: var(--very-light-orange);
 }
 .label {
 	font-size: var(--sm);
@@ -69,6 +73,10 @@
 	font-size: var(--md);
 	font-weight: bold;
 	height: 50px;
+}
+.secondary-button:hover{
+	border: 1px solid  var(--very-light-orange);
+	color: var(--very-light-orange)
 }
 .login-button {
 	margin-top: 14px;
