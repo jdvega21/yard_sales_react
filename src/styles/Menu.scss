@@ -8,6 +8,7 @@
     top: 60px;
     right: 50px;
     background-color: var(--white);
+    z-index: 1;
 }
 .Menu ul{
     list-style: none;
@@ -34,7 +35,7 @@
 .Menu ul li a{
     color: var(--black);
     text-decoration: none;
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
 }
 .Menu ul li a:hover{

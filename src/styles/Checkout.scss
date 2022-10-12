@@ -17,8 +17,12 @@
     margin-top: 16px;
     padding: 8px;
     margin-bottom: 14px;
-    cursor: pointer;
   }
+  .Checkout-container img:hover{
+    cursor: pointer;
+    filter: var(--hover-red-filter);
+  }
+
   .Checkout-title{
     font-size: var(--lg);
     font-weight: bold;

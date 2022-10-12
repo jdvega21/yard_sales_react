@@ -11,6 +11,7 @@
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
+	z-index: 1;
 }
 .title-container {
 	display: flex;
@@ -22,7 +23,11 @@
 	margin-top: 16px;
 	padding: 8px;
     margin-bottom: 14px;
+	
+}
+.title-container img:hover {
 	cursor: pointer;
+	filter: var(--hover-red-filter);
 }
 .title {
 	font-size: var(--lg);
