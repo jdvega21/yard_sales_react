@@ -14,26 +14,29 @@ const Header = () => {
 	const {state} = useContext(AppContext);
 	const [toogleOrders, setToggleOrders] = useState(false);
 	const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
-	const handleToggle = () => {
-		setToggle(!toggle);
-	}
 	const handleToggleMenues = toggleOption => {
-		if (toggleOption === "menu")
-		{
-			setToggle(!toggle);
-			setToggleOrders(false);
+		switch (toggleOption){
+			case "menu" : 
+				setToggle(!toggle);
+				setToggleOrders(false);
+				setToggleMobileMenu(false);
+				break;
+			case "cart" : 
+				setToggleOrders(!toogleOrders);
+				setToggle(false);
+				setToggleMobileMenu(false);
+				break;
+			case "mobileMenu" :
+				setToggleMobileMenu(!toggleMobileMenu);
+				setToggle(false);
+				setToggleOrders(false);
+				break;
 		}
-		else
-		{
-			setToggleOrders(!toogleOrders);
-			setToggle(false);
-		}
-		  	
 	  };
 	return (
 		<nav>
 			<img src={menu} alt="menu" className="menu"
-				onClick={ () => setToggleMobileMenu(!toggleMobileMenu)}
+				onClick={ () => handleToggleMenues("mobileMenu")}
 			/>
 			<div className="navbar-left">
 				<a href="/" className="nav-logo">
@@ -75,8 +78,8 @@ const Header = () => {
 				</ul>
 			</div>
 			{toggle ? <Menu/> : null}
-			{toogleOrders ? <MyOrder/> : null}
-			{toggleMobileMenu ? <MobileMenu onHandleMenu ={setToggleMobileMenu}/> : null}
+			{toogleOrders ? <MyOrder onHandleMyOrder = {setToggleOrders}/> : null}
+			{toggleMobileMenu ? <MobileMenu onHandleMobileMenu ={setToggleMobileMenu}/> : null}
 		</nav>
 	);
 };
