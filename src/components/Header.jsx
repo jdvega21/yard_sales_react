@@ -2,21 +2,27 @@ import React, {useState, useContext} from 'react';
 import '@styles/Header.scss';
 import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
+import MobileMenu from '@components/MobileMenu';
+import AppContext from '@context/AppContext';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
-import AppContext from '@context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
+
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
 	const {state} = useContext(AppContext);
 	const [toogleOrders, setToggleOrders] = useState(false);
+	const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 	const handleToggle = () => {
 		setToggle(!toggle);
 	}
+
 	return (
 		<nav>
-			<img src={menu} alt="menu" className="menu" />
+			<img src={menu} alt="menu" className="menu"
+				onClick={ () => setToggleMobileMenu(!toggleMobileMenu)}
+			/>
 			<div className="navbar-left">
 				<a href="/" className="nav-logo">
 					<img src={logo} alt="logo" />
@@ -58,6 +64,7 @@ const Header = () => {
 			</div>
 			{toggle ? <Menu/> : null}
 			{toogleOrders ? <MyOrder/> : null}
+			{toggleMobileMenu ? <MobileMenu onHandleMenu ={setToggleMobileMenu}/> : null}
 		</nav>
 	);
 };
