@@ -17,7 +17,19 @@ const Header = () => {
 	const handleToggle = () => {
 		setToggle(!toggle);
 	}
-
+	const handleToggleMenues = toggleOption => {
+		if (toggleOption === "menu")
+		{
+			setToggle(!toggle);
+			setToggleOrders(false);
+		}
+		else
+		{
+			setToggleOrders(!toogleOrders);
+			setToggle(false);
+		}
+		  	
+	  };
 	return (
 		<nav>
 			<img src={menu} alt="menu" className="menu"
@@ -50,12 +62,12 @@ const Header = () => {
 			</div>
 			<div className="navbar-right">
 				<ul>
-					<li className="navbar-email" onClick={handleToggle}>
+					<li className="navbar-email" onClick={ () => handleToggleMenues("menu")}>
 						myemail@example.com
 					</li>
 					<li 
 						className="navbar-shopping-cart"
-						onClick={ () => setToggleOrders(!toogleOrders)}
+						onClick={ () => handleToggleMenues("cart")}
 					>
 						<img src={shoppingCart} alt="shopping cart" />
 						{state.cart.length > 0 ? <div>{state.cart.length}</div>: null}
