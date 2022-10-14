@@ -1,15 +1,12 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import '@styles/MobileMenu.scss';
 import close from '@icons/icon_close.png';
 
-const MobileMenu = ({onHandleMobileMenu}) => {
-	const hideMobileMenu = useCallback(event =>
-		{onHandleMobileMenu(event.target.value)}, [false] 
-	);
+const MobileMenu = ({setToggleMobileMenu}) => {
 	return (
 		<div className="MobileMenu">
 			<img src={close} alt="close"
-				onClick={hideMobileMenu}
+				onClick={() => setToggleMobileMenu(false)}
 			/>
 			<ul>
 				<li>

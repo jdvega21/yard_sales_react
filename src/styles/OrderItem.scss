@@ -28,7 +28,9 @@
     font-size: var(--md);
     font-weight: bold;
 }
-
+.OrderItem img:nth-child(4){
+    margin-right: 16px;
+}
 .OrderItem img:nth-child(4):hover {
     cursor: pointer;
     filter: var(--hover-red-filter)

@@ -78,8 +78,8 @@ const Header = () => {
 				</ul>
 			</div>
 			{toggle ? <Menu/> : null}
-			{toogleOrders ? <MyOrder onHandleMyOrder = {setToggleOrders}/> : null}
-			{toggleMobileMenu ? <MobileMenu onHandleMobileMenu ={setToggleMobileMenu}/> : null}
+			{toogleOrders ? <MyOrder setToggleOrders = {setToggleOrders}/> : null}
+			{toggleMobileMenu ? <MobileMenu setToggleMobileMenu ={setToggleMobileMenu}/> : null}
 		</nav>
 	);
 };

@@ -2,6 +2,7 @@
 
 .MyOrder {
 	width: 360px;
+	height: max-content;
 	padding: 24px;
 	box-sizing: border-box;
 	position: absolute;
@@ -33,6 +34,31 @@
 	font-size: var(--lg);
 	font-weight: bold;
 }
+.my-order-content{
+	overflow-y: scroll;
+	overscroll-behavior-y: contain;
+	max-height: 400px;
+}
+/* width */
+.my-order-content::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+.my-order-content::-webkit-scrollbar-track {
+background: var(--text-input-field);
+}
+
+/* Handle */
+.my-order-content::-webkit-scrollbar-thumb {
+background: var(--very-light-pink);
+}
+
+/* Handle on hover */
+.my-order-content::-webkit-scrollbar-thumb:hover {
+background: var(--hospital-green);
+}
+
 .order {
 	display: grid;
 	grid-template-columns: auto 1fr;
