@@ -39,22 +39,18 @@
 	overscroll-behavior-y: contain;
 	max-height: 400px;
 }
-/* width */
 .my-order-content::-webkit-scrollbar {
 	width: 4px;
 }
 
-/* Track */
 .my-order-content::-webkit-scrollbar-track {
 background: var(--text-input-field);
 }
 
-/* Handle */
 .my-order-content::-webkit-scrollbar-thumb {
 background: var(--very-light-pink);
 }
 
-/* Handle on hover */
 .my-order-content::-webkit-scrollbar-thumb:hover {
 background: var(--hospital-green);
 }
